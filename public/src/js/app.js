@@ -2,7 +2,7 @@ const buttonGET = document.querySelector('#GET-button')
 const buttonPUT = document.querySelector('#PUT-button')
 const output = document.querySelector('#output')
 
-buttonGET.addEventListener('click', async function () {
+buttonGET.addEventListener('click', async () => {
   try {
     const responseGET = await fetch(
       await new Promise(resolve => {
@@ -19,7 +19,7 @@ buttonGET.addEventListener('click', async function () {
   }
 })
 
-buttonPUT.addEventListener('click', async function () {
+buttonPUT.addEventListener('click', async () => {
   try {
     const responsePUT = await fetch(
       await new Promise(resolve => {
